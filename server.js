@@ -22,6 +22,7 @@ const adminRoute = require("./Routes/AdminRoute");
 const HospitalRoute = require("./Routes/HospitalRoute");
 const buyRoute = require("./Routes/BuyRoute");
 const requestRoute = require("./Routes/RequestRoute");
+const stockRoute = require("./Routes/StockRoute");
 
 app.use("/api/v1", DonationRoute);
 app.use("/api/v1", ContactRoute);
@@ -29,6 +30,7 @@ app.use("/api/v1", HospitalRoute);
 app.use("/api/v1", adminRoute);
 app.use("/api/v1", buyRoute);
 app.use("/api/v1", requestRoute);
+app.use("/api/v1", stockRoute);
 
 app.listen(4000, () => {
   console.log("Server Is Listening At 4000");
